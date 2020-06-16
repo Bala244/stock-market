@@ -65,7 +65,7 @@ export default class Chart extends React.Component {
     return (
       <div>
         {this.state.error ? (
-          <Alert className="mt-15" variant={"danger"}>
+          <Alert className="mt-16" variant={"danger"}>
             Oops! Something went wrong. Alpha Vantage did not send a valid
             response.
           </Alert>
