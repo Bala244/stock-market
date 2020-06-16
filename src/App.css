@@ -1,7 +1,6 @@
 body{
   background-image: url(./img/bg.jpg);
-  position: absolute;
-  background-repeat: no-repeat;
+
   
 
 }
@@ -48,6 +47,10 @@ body{
 
 }
 
+.mt-15{
+  color: red;
+}
+
 h3{
   color: white;
 }
@@ -56,6 +59,7 @@ h1{
   text-align: center;
 }
 .text-muted{
+  text-align: center;
   color: white;
   font-weight: bold;
   padding: 10px;

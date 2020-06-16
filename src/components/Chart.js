@@ -47,13 +47,13 @@ export default class Chart extends React.Component {
   }
 
   renderCharts = () => (
-    <div className="chart">
+    <div className="mt-30">
       <h3>{this.state.symbol}</h3>
       <StockChart
         highcharts={Highcharts}
         options={stockOptions(this.state.stockData, this.state.symbol)}
       />
-      <h3 className="text">NFTY</h3>
+      <h3 className="mt-15">NFTY</h3>
       <StockChart
         highcharts={Highcharts}
         options={stockOptions(this.state.nftyData, "NFTY")}
@@ -65,7 +65,7 @@ export default class Chart extends React.Component {
     return (
       <div>
         {this.state.error ? (
-          <Alert className="text" variant={"danger"}>
+          <Alert className="mt-15" variant={"danger"}>
             Oops! Something went wrong. Alpha Vantage did not send a valid
             response.
           </Alert>
@@ -77,6 +77,3 @@ export default class Chart extends React.Component {
     );
   }
 }
-
-
-

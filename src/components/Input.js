@@ -13,6 +13,7 @@ export default class Input extends React.Component {
       chartData: {},
       loading: false,
       symbols: [
+  
         {
           label: "Facebook (FB)",
           value: "FB",
@@ -102,7 +103,7 @@ export default class Input extends React.Component {
         >
           {this.state.loading
             ? "Fetching data..."
-            : "__________________________________________________Select or Search stock symbols like FB, MSFT, etc.____________________________________________"}
+            : "Select or Search stock symbols like FB, MSFT, etc.,.  :)"}
         </Form.Text>
       </div>
     );
