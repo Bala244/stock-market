@@ -33,7 +33,7 @@ const stockOptions = (data, symbol) => {
     series: [
       {
         data: data,
-        type: "area",
+        type: "spline",
         name: `${symbol} Stock Price`,
         id: `${symbol}`,
       },

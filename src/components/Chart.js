@@ -47,7 +47,7 @@ export default class Chart extends React.Component {
   }
 
   renderCharts = () => (
-    <div className="chart"style={{padding:"50px"}}>
+    <div className="chart">
       <h3>{this.state.symbol}</h3>
       <StockChart
         highcharts={Highcharts}
