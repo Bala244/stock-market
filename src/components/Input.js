@@ -14,17 +14,13 @@ export default class Input extends React.Component {
       loading: false,
       symbols: [
         {
-          label: "International Business Machines Corporation (IBM)",
-          value: "IBM",
-        },
-        {
           label: "Facebook (FB)",
           value: "FB",
         },
 
         {
-          label: "Alphabet Inc. (GOOGL)",
-          value: "GOOGL",
+          label: "Microsoft Corporation",
+          value: "MSFT",
         },
       ],
     };
@@ -99,14 +95,14 @@ export default class Input extends React.Component {
           cacheOptions
           options={this.state.symbols}
           onChange={this.getData}
-          noOptionsMessage={() => "Search Stock Symbol. Ex: IBM"}
+          noOptionsMessage={() => "Search Stock Symbol. Ex: FB"}
           onInputChange={this.fetchSymbols}
         />
         <Form.Text className="text-muted"
         >
           {this.state.loading
             ? "Fetching data..."
-            : "Select or Search stock symbols like IBM, APPL, etc.,. Be gentle, Alpha Vantage Standard API only allows 5 requests/min and 500/day :)"}
+            : "__________________________________________________Select or Search stock symbols like FB, MSFT, etc.____________________________________________"}
         </Form.Text>
       </div>
     );

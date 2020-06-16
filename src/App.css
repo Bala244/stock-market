@@ -63,6 +63,10 @@ h1{
 .chart{
   text-align: center;
 }
+.input{
+  text-align: center;
+  width: 100%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
